@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 require('./routes/flickrPhoto/index')(app);
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

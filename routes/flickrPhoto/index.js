@@ -8,8 +8,8 @@ module.exports = (app) => {
 		flickrPhotoHandler.getAll,
   );
   app.get(
-    '/api/flickr-photos/search',
-    setHeader,
-    flickrPhotoHandler.getByTag,
+		'/api/flickr-photos/search',
+		setHeader,
+		flickrPhotoHandler.getByTag,
   );
 };
