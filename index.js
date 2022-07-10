@@ -6,6 +6,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
   'https://aia-test-zeta.vercel.app',
+  'https://aia-fe.vercel.app',
 ];
 
 // set allowed domain
