@@ -1,5 +1,4 @@
 const flickrPhoto = require('../../services/flickrPhoto');
-const flickrKey = '574d1ed8e8c3c4e77d3810c065e27305'
 
 module.exports.getAll = async function(req, res) {
   try {
