@@ -15,19 +15,6 @@ const FlickrPhoto = {
       });
     });
   },
-  getFlickrPhotoByTag(params) {
-    return new Promise(async (resolve, reject) => {
-      axios.get(`${flickrMainUrl}/rest/`, { params })
-      .then(data => {
-        if(data?.data){
-          return resolve(data.data);
-        }
-      })
-      .catch(err => {
-          return reject(err);
-      });
-    });
-  },
 };
 
 module.exports = FlickrPhoto;
